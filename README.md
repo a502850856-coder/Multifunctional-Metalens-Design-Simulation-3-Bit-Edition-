@@ -19,16 +19,19 @@ By toggling the ENABLE_3BIT_QUANTIZATION switch, you can freely choose between c
 Continuous Matching Mode (False): Searches the full-size unit cell library for the nanopillar that most closely matches the required phase for each pixel, aiming for extreme theoretical phase accuracy.
 3-Bit Quantization Mode (True): Evenly divides the continuous phase (0 to 2π) into 8 standard steps (0°, 45°, 90°... 315°). The algorithm automatically pre-selects 8 standard nanopillar sizes from the library that best fit these ideal phases, and populates the entire array using only these 8 unit cells.
 Advantage: Greatly reduces the proximity effect in Electron Beam Lithography (EBL), minimizes processing data size, and improves the fault tolerance and yield of large-area array fabrication.
+<img width="1466" height="1251" alt="image" src="https://github.com/user-attachments/assets/b8dc7c61-be16-4186-ab61-73edc97bdeb7" />
+<img width="1588" height="668" alt="image" src="https://github.com/user-attachments/assets/fda91f4a-0d53-4946-9ef5-af7c1cb9d430" />
 
-3. 🏭 Industrial-Grade GDSII Layout Generation
+
+4. 🏭 Industrial-Grade GDSII Layout Generation
 Built on the gdspy library, it automatically generates a .gds layout file based on the phase mapping results, ready for photomask making or EBL exposure.
 Supports customizable array dimensions (nx, ny), unit cell pitch (pixel_pitch), and operating wavelength (lam_nm).
 
-4. 🔬 Rapid Focal Field Simulation & Visualization
+5. 🔬 Rapid Focal Field Simulation & Visualization
 FFT Focal Field Calculation: Built-in 2D focal plane optical field intensity calculation based on Fast Fourier Transform to instantly verify the lens design.
 Multi-dimensional Visualization: One-click generation of comparative views, intuitively displaying Target Continuous Phase vs. Mapped Nanopillar Radius vs. Quantized Actual Phase, making it easy to troubleshoot design blind spots.
 
-5. 🛠️ Flexible Unit Library Interface
+6. 🛠️ Flexible Unit Library Interface
 Real Library Mode: Supports reading pre-calculated CSV unit library files (containing radius, phase, and amplitude) obtained from FDTD/RCWA parameter sweeps.
 Virtual Library Mode: In the absence of real simulation data, the script will automatically generate a virtual test library with random amplitudes and linear phases, ensuring the code can run immediately in any environment to verify algorithmic logic.
 
