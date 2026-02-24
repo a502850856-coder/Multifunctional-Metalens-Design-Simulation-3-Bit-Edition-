@@ -1,4 +1,4 @@
-# Multifunctional-Metalens-Design-Simulation-3-Bit-Edition-
+# Multifunctional-Metalens-Design-Simulation-3-Bit-Edition
 This project is a comprehensive, Python-based toolkit for the design, simulation, and layout generation of multifunctional metalenses and metasurfaces.
 Whether you are conducting research in micro/nano-optics or engineering metasurface devices for fabrication, this script provides an end-to-end workflow: from target phase calculation and unit cell library matching to GDSII physical layout export and focal field simulation.
 In the V3 release, we have introduced a core 3-Bit Phase Quantization (8-level discretization) architecture, which significantly reduces fabrication difficulty and improves design robustness.
@@ -51,9 +51,11 @@ My email：a502820856@gmail.com
 :)
 
 中文翻译
-
+多功能超表面设计仿真程序（3bit版本）
 本项目是一个基于 Python 的多功能超构透镜（Metalens）设计、仿真与版图生成工具。无论您是从事微纳光学研究，还是进行超构表面器件的工程化流片，本脚本都能为您提供从目标相位计算、单元库匹配到 GDSII 物理版图导出及焦场仿真的一站式端到端工作流。
 在 V3 版本中引入了 3-Bit 相位量化（8阶离散化） 架构，极大降低了加工难度并提高了设计的鲁棒性。
+<img width="5682" height="3541" alt="all_phase_distributions" src="https://github.com/user-attachments/assets/666906f4-aae2-4a56-bd9e-a88a1beda16b" />
+<img width="1742" height="981" alt="image" src="https://github.com/user-attachments/assets/e947c3f4-16a0-4ebf-b8c9-78631a07b618" />
 ✨ 核心功能亮点
 
 
@@ -66,6 +68,7 @@ My email：a502820856@gmail.com
 
 
 🚀 [核心更新] 3-Bit 相位量化模式 (3-Bit Quantization)通过切换 ENABLE_3BIT_QUANTIZATION 开关，自由选择连续匹配或离散量化模式：连续匹配模式 (False)：在全尺寸单元库中为每个像素寻找相位最接近的纳米柱，追求极致的理论相位逼近。3-bit 量化模式 (True)：将 $0 \sim 2\pi$ 的连续相位均匀划分为 8 个标准阶梯（0°, 45°, 90°... 315°）。算法会自动从库中预选出最贴合这 8 个理想相位的 8 种标准纳米柱尺寸，全阵列仅使用这 8 种单元进行排布。优势：大幅降低电子束曝光 (EBL) 的临近效应，减少加工数据量，提高大面积阵列制备的容错率与良率。
+<img width="1466" height="1251" alt="image" src="https://github.com/user-attachments/assets/b8dc7c61-be16-4186-ab61-73edc97bdeb7" />
 
 
 🏭 工业级 GDSII 版图自动化生成
@@ -81,7 +84,7 @@ FFT 焦场计算：内置基于快速傅里叶变换的二维焦平面光场强�
 🛠️ 灵活的单元库 (Unit Library) 接口
 真实库模式：支持读取基于 FDTD/RCWA 扫描预计算好的 CSV 单元库文件（包含半径、相位、振幅）。
 虚拟库模式：在缺少真实仿真数据时，脚本会自动生成一个具有随机振幅和线性相位的虚拟测试库，保证代码在任何环境下都能立即跑通并验证算法逻辑。
-
+<img width="1600" height="647" alt="image" src="https://github.com/user-attachments/assets/e38c8f20-75ee-4828-9720-5f83f88764de" />
 
 📂 输出文件清单每次运行脚本后，系统将在指定的输出目录（默认桌面）生成带有参数后缀的独立文件集，例如针对 630nm 涡旋光束的 3-bit 量化设计，将输出：
 vortex_630nm_3bit.gds: 版图文件。用于微纳加工。
