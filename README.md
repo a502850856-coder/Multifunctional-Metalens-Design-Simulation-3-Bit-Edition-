@@ -1,4 +1,4 @@
-# Multifunctional-Metalens-Design-Simulation-3-Bit-Edition
+# Multifunctional-Metalens-Design-Simulation 3-Bit-Edition
 This project is a comprehensive, Python-based toolkit for the design, simulation, and layout generation of multifunctional metalenses and metasurfaces.
 Whether you are conducting research in micro/nano-optics or engineering metasurface devices for fabrication, this script provides an end-to-end workflow: from target phase calculation and unit cell library matching to GDSII physical layout export and focal field simulation.
 In the V3 release, we have introduced a core 3-Bit Phase Quantization (8-level discretization) architecture, which significantly reduces fabrication difficulty and improves design robustness.
