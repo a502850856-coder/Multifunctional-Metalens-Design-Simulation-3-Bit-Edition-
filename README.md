@@ -3,7 +3,6 @@ This project is a comprehensive, Python-based toolkit for the design, simulation
 Whether you are conducting research in micro/nano-optics or engineering metasurface devices for fabrication, this script provides an end-to-end workflow: from target phase calculation and unit cell library matching to GDSII physical layout export and focal field simulation.
 In the V3 release, we have introduced a core 3-Bit Phase Quantization (8-level discretization) architecture, which significantly reduces fabrication difficulty and improves design robustness.
 <img width="5682" height="3541" alt="all_phase_distributions" src="https://github.com/user-attachments/assets/666906f4-aae2-4a56-bd9e-a88a1beda16b" />
-<img width="1742" height="981" alt="image" src="https://github.com/user-attachments/assets/e947c3f4-16a0-4ebf-b8c9-78631a07b618" />
 
 ✨ Core Features
 1. 🎯 15+ Target Light Field Modulation Modes
@@ -35,6 +34,7 @@ Multi-dimensional Visualization: One-click generation of comparative views, intu
 6. 🛠️ Flexible Unit Library Interface
 Real Library Mode: Supports reading pre-calculated CSV unit library files (containing radius, phase, and amplitude) obtained from FDTD/RCWA parameter sweeps.
 Virtual Library Mode: In the absence of real simulation data, the script will automatically generate a virtual test library with random amplitudes and linear phases, ensuring the code can run immediately in any environment to verify algorithmic logic.
+<img width="1742" height="981" alt="image" src="https://github.com/user-attachments/assets/e947c3f4-16a0-4ebf-b8c9-78631a07b618" />
 
 📂 Output Files
 After each run, the system generates an independent set of files in the specified output directory (Desktop by default), suffixed with your parameters. For example, a 3-bit quantized design for a 630nm vortex beam will output:
