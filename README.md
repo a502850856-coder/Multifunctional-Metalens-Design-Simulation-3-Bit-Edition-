@@ -3,6 +3,7 @@ This project is a comprehensive, Python-based toolkit for the design, simulation
 Whether you are conducting research in micro/nano-optics or engineering metasurface devices for fabrication, this script provides an end-to-end workflow: from target phase calculation and unit cell library matching to GDSII physical layout export and focal field simulation.
 In the V3 release, we have introduced a core 3-Bit Phase Quantization (8-level discretization) architecture, which significantly reduces fabrication difficulty and improves design robustness.
 <img width="5682" height="3541" alt="all_phase_distributions" src="https://github.com/user-attachments/assets/666906f4-aae2-4a56-bd9e-a88a1beda16b" />
+<img width="1742" height="981" alt="image" src="https://github.com/user-attachments/assets/e947c3f4-16a0-4ebf-b8c9-78631a07b618" />
 
 ✨ Core Features
 1. 🎯 15+ Target Light Field Modulation Modes
@@ -11,7 +12,7 @@ Basic Focusing: Point focus (point), Line focus (line)
 Vortex & Non-diffracting Beams: Vortex beam (vortex), Bessel beam (bessel), Airy beam (airy), Bessel-vortex composite (bessel_vortex)
 Multi-focus & Aberration Control: Off-axis focusing (off_axis), Transverse multi-focus (multi_focus), Astigmatic lens (astigmatic), Spiral multi-focus (spiral_multi_focus), Longitudinal multi-focus (longitudinal_multi_focus), Longitudinal vortex (longitudinal_vortex)
 Complex Fields & Holography (GS Algorithm): Optical lattice (optical_lattice), Flat-top beam shaping (flat_top_gs), Custom holographic patterns (holographic_gs)
-<img width="2364" height="998" alt="image" src="https://github.com/user-attachments/assets/0abc8af7-460d-409b-b11c-34c5ea1dda5a" />
+
 
 2. 🚀 [Core Update] 3-Bit Phase Quantization Mode
 By toggling the ENABLE_3BIT_QUANTIZATION switch, you can freely choose between continuous matching and discrete quantization modes:
