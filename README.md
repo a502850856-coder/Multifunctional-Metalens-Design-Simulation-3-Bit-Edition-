@@ -20,7 +20,8 @@ Continuous Matching Mode (False): Searches the full-size unit cell library for t
 3-Bit Quantization Mode (True): Evenly divides the continuous phase (0 to 2π) into 8 standard steps (0°, 45°, 90°... 315°). The algorithm automatically pre-selects 8 standard nanopillar sizes from the library that best fit these ideal phases, and populates the entire array using only these 8 unit cells.
 Advantage: Greatly reduces the proximity effect in Electron Beam Lithography (EBL), minimizes processing data size, and improves the fault tolerance and yield of large-area array fabrication.
 <img width="1466" height="1251" alt="image" src="https://github.com/user-attachments/assets/b8dc7c61-be16-4186-ab61-73edc97bdeb7" />
-<img width="1588" height="668" alt="image" src="https://github.com/user-attachments/assets/fda91f4a-0d53-4946-9ef5-af7c1cb9d430" />
+<img width="1600" height="647" alt="image" src="https://github.com/user-attachments/assets/e38c8f20-75ee-4828-9720-5f83f88764de" />
+
 
 
 4. 🏭 Industrial-Grade GDSII Layout Generation
