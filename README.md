@@ -43,6 +43,10 @@ vortex_630nm_3bit_meta.json: Metadata File. Records the parameters and paths of 
 Ensure you have the following Python libraries installed before use:
 pip install numpy pandas matplotlib gdspy
 
+My email：a502820856@gmail.com
+
+:)
+
 中文翻译
 
 本项目是一个基于 Python 的多功能超构透镜（Metalens）设计、仿真与版图生成工具。无论您是从事微纳光学研究，还是进行超构表面器件的工程化流片，本脚本都能为您提供从目标相位计算、单元库匹配到 GDSII 物理版图导出及焦场仿真的一站式端到端工作流。
@@ -86,3 +90,5 @@ vortex_630nm_3bit_meta.json: 元数据文件。记录本次生成的参数与路
 
 使用前请确保已安装以下 Python 库：
 pip install numpy pandas matplotlib gdspy
+
+与我联系：a502820856@gmail.com
