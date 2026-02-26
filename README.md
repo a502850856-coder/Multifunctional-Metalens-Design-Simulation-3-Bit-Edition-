@@ -46,7 +46,7 @@ vortex_630nm_3bit_meta.json: Metadata File. Records the parameters and paths of 
 Ensure you have the following Python libraries installed before use:
 pip install numpy pandas matplotlib gdspy
 
-My email：a502820856@gmail.com
+My email：a502850856@gmail.com
 
 :)
 
@@ -97,4 +97,4 @@ vortex_630nm_3bit_meta.json: 元数据文件。记录本次生成的参数与路
 使用前请确保已安装以下 Python 库：
 pip install numpy pandas matplotlib gdspy
 
-与我联系：a502820856@gmail.com
+与我联系：a502850856@gmail.com
